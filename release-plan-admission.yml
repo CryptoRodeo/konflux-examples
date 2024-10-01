@@ -3,7 +3,7 @@ kind: ReleasePlanAdmission
 metadata:
   labels:
     release.appstudio.openshift.io/auto-release: 'true'
-  name: demo-rpa
+  name: konflux-ui-demo-rpa
   namespace: bramos-tenant
 spec:
   applications:
@@ -18,5 +18,5 @@ spec:
         - name: 'revision'
           value: 'main'
         - name: 'pathInRepo'
-          value: 'release.yaml'
+          value: 'release.yml'
   policy: always-pass-policy
