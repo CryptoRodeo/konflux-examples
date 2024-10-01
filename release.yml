@@ -1,0 +1,15 @@
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: basic-release-pipeline
+spec:
+  tasks:
+    - name: say-running-release
+      taskSpec:
+        steps:
+          - name: echo
+            image: alpine
+            command:
+              - echo
+            args:
+              - "Running release."
