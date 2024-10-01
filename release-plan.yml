@@ -1,0 +1,13 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: ReleasePlan
+metadata:
+  name: konflux-ui-demo-release
+  namespace: bramos-tenant
+  labels:
+    release.appstudio.openshift.io/auto-release: "true"
+    release.appstudio.openshift.io/releasePlanAdmission: konflux-ui-demo-rpa
+    release.appstudio.openshift.io/standing-attribution: "true"
+spec:
+  application: github-demo
+  target: bramos-tenant
+
