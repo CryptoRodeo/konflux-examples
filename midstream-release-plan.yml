@@ -1,0 +1,13 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: ReleasePlan
+metadata:
+  name: midstream-demo-release-plan
+  namespace: bramos-tenant
+  labels:
+    release.appstudio.openshift.io/auto-release: "true"
+    release.appstudio.openshift.io/releasePlanAdmission: midstream-rpa
+    release.appstudio.openshift.io/standing-attribution: "true"
+spec:
+  application: midstream-gitmodule-pattern
+  target: bramos-tenant
+
